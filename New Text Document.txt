@@ -2,32 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My First Website</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      padding: 40px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      background: #0f2027;
+      color: white;
+      line-height: 1.6;
     }
+
+    section {
+      min-height: 100vh;
+      padding: 60px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
     .box {
-      background: white;
-      padding: 30px;
       max-width: 600px;
-      margin: auto;
-      border-radius: 8px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #203a43, #2c5364);
+    }
+
+    .about {
+      background: #142a33;
+    }
+
+    .next {
+      background: #1b3a4b;
+    }
+
+    h1, h2 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      opacity: 0.9;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 22px;
+      background: white;
+      color: #203a43;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
 
-  <div class="box">
-    <h1>Hello, I’m Billy</h1>
-    <p>This is my first experimental website.</p>
-    <p>
-      I’m learning how websites work and this page exists only
-      to help me practice and explore.
-    </p>
-  </div>
+  <section class="hero">
+    <div class="box">
+      <h1>Hello, I’m Billy. i am creating a website using free ai tools.</h1>
+      <p>This is my experimental website that I'm inspired to build after noticing i have no track record or that can back me up when it all explodes we are in the trend of AI and social media and the bubble is getting big and bigger it. this day marks the begging of a new character, personality and discipline i challenge myself on a journey that i have only travelled in my imagination and its time to manifest it to reality.</p>
+      <a href="#about">Scroll Down ↓</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="box">
+      <h2>About This Site</h2>
+      <p>
+        This website exists to help me learn how websites work.
+        I’m experimenting, breaking things, and improving little by little.
+      </p>
+    </div>
+  </section>
+
+  <section class="next">
+    <div class="box">
+      <h2>What’s Next?</h2>
+      <p>
+        I’ll decide later. For now, I’m just building and learning.
+      </p>
+    </div>
+  </section>
 
 </body>
 </html>
