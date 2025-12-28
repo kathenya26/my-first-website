@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>Hello, I’m Billy</h1>
+    <p>This is my first experimental website.</p>
+    <p>
+      I’m learning how websites work and this page exists only
+      to help me practice and explore.
+    </p>
+  </div>
+
+</body>
+</html>
