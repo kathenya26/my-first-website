@@ -1,122 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Billy | My First Website</title>
 
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      background: #0f2027;
-      color: white;
-      line-height: 1.6;
-    }
+<style>
 
-    /* NAVIGATION */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(15, 32, 39, 0.9);
-      backdrop-filter: blur(8px);
-      padding: 12px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      z-index: 1000;
-    }
+html{
+scroll-behavior:smooth;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      opacity: 0.9;
-    }
+body{
+font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+margin:0;
+background:#0f2027;
+color:white;
+line-height:1.6;
+}
 
-    nav a:hover {
-      opacity: 1;
-    }
+/* NAVIGATION */
 
-    /* SECTIONS */
-    section {
-      min-height: 100vh;
-      padding: 100px 20px 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(15,32,39,0.9);
+backdrop-filter:blur(8px);
+padding:14px 20px;
+display:flex;
+justify-content:center;
+gap:25px;
+z-index:1000;
+}
 
-    .box {
-      max-width: 600px;
-    }
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+opacity:.9;
+padding-bottom:4px;
+}
 
-    .hero {
-      background: linear-gradient(135deg, #203a43, #2c5364);
-    }
+nav a:hover{
+opacity:1;
+border-bottom:2px solid #4fd1c5;
+}
 
-    .about {
-      background: #142a33;
-    }
+/* SECTIONS */
 
-    .next {
-      background: #1b3a4b;
-    }
+section{
+min-height:100vh;
+padding:110px 20px 60px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
 
-    h1, h2 {
-      margin-bottom: 15px;
-    }
+.box{
+max-width:650px;
+padding:20px;
+}
 
-    p {
-      opacity: 0.9;
-    }
-  </style>
+/* SECTION COLORS */
+
+.hero{
+background:linear-gradient(135deg,#203a43,#2c5364);
+}
+
+.about{
+background:#142a33;
+}
+
+.next{
+background:#1b3a4b;
+}
+
+.contact{
+background:#10242c;
+}
+
+/* TEXT */
+
+h1,h2{
+margin-bottom:15px;
+}
+
+p{
+opacity:.9;
+}
+
+/* BUTTON */
+
+button{
+margin-top:20px;
+padding:12px 22px;
+border:none;
+border-radius:6px;
+background:#4fd1c5;
+color:#0f2027;
+font-weight:600;
+cursor:pointer;
+transition:.25s;
+}
+
+button:hover{
+transform:translateY(-2px);
+background:#38b2ac;
+}
+
+</style>
 </head>
+
 <body>
 
-  <!-- NAV BAR -->
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#next">Next</a>
-  </nav>
+<!-- NAVIGATION -->
 
-  <!-- SECTIONS -->
-  <section class="hero" id="home">
-    <div class="box">
-      <h1>Hello, I’m Billy</h1>
-      <p>This is my experimental website.</p>
-    </div>
-  </section>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#next">Next</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  <section class="about" id="about">
-    <div class="box">
-      <h2>About This Site</h2>
-      <p>
-        This site exists to help me learn how websites work
-        by building and improving them step by step.
-      </p>
-    </div>
-  </section>
+<!-- HERO -->
 
-  <section class="next" id="next">
-    <div class="box">
-      <h2>What’s Next?</h2>
-      <p>
-        For now, I’m just experimenting and learning.
-      </p>
-    </div>
-  </section>
+<section class="hero" id="home">
+<div class="box">
+<h1>Hello, I’m Billy</h1>
+<p>This is my experimental website where I learn how the web works by building it step by step.</p>
 
-<!-- SECTIONS -->
-  <section class="hero" id="next">
-    <div class="box">
-      <h1>Hello, reach out</h1>
-      <p> lets associate, you are not here by mistake.</p>
-    </div>
-  </section>
+<button onclick="location.href='#contact'">
+Connect With Me
+</button>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+<div class="box">
+
+<h2>About This Site</h2>
+
+<p>
+This website exists to help me understand how websites are built.
+Every update is part of the learning process — design, layout,
+navigation and structure.
+</p>
+
+</div>
+</section>
+
+<!-- NEXT -->
+
+<section class="next" id="next">
+<div class="box">
+
+<h2>What’s Next?</h2>
+
+<p>
+I’m experimenting with building websites, learning new tools,
+and improving this page step by step.
+</p>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+<div class="box">
+
+<h2>Reach Out</h2>
+
+<p>
+Let's connect — you are not here by mistake.
+</p>
+
+<button onclick="window.location.href='mailto:youremail@example.com'">
+Send Email
+</button>
+
+</div>
+</section>
 
 </body>
 </html>
